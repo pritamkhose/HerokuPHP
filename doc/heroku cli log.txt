@@ -171,3 +171,136 @@ E:\Code\Java\HerokuJava\PHP\php-getting-started>heroku logs --tail
 2019-08-29T17:17:21.359815+00:00 heroku[router]: at=info method=GET path="/stylesheets/main.css" host=stark-plains-47033.herokuapp.com request_id=e5a7e71d-864f-473e-a005-611f9cefea13 fwd="157.33.109.117" dyno=web.1 connect=1ms service=3ms status=304 bytes=128 protocol=https
 2019-08-29T17:17:21.605265+00:00 heroku[router]: at=info method=GET path="/images/lang-logo.png" host=stark-plains-47033.herokuapp.com request_id=973b8bf8-f1fc-43f6-9de1-4bd21ffb251c fwd="157.33.109.117" dyno=web.1 connect=1ms service=2ms status=304 bytes=128 protocol=https
 ^C
+E:\Code\Java\HerokuJava\PHP\php-getting-started>web: vendor/bin/heroku-php-apache2 web/
+'web:' is not recognized as an internal or external command,
+operable program or batch file.
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>composer -V
+'composer' is not recognized as an internal or external command,
+operable program or batch file.
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>path
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Dart\dart-sdk\bin;F:\MATLABR2014a\runtime\win64;F:\MATLABR2014a\bin;F:\MATLAB\MATLAB Production Server\R2014a\runtime\win64;F:\MATLAB\MATLAB Production Server\R2014a\bin;F:\MATLAB\MATLAB Production Server\R2014a\polyspace\bin;F:\MATLABR2014a\polyspace\bin;C:\Program Files (x86)\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\AdoptOpenJDK\jdk8u192-b12\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Android\android-sdk\tools;C:\Android\android-sdk\platform-tools;C:\Android\android-sdk\tools\bin;C:\Users\Pritam\AppData\Local\Microsoft\WindowsApps;C:\Users\Pritam\AppData\Local\GitHubDesktop\bin;C:\Program Files\Heroku\bin;C:\Users\Pritam\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Pritam\AppData\Roaming\npm;E:\Software\AndroidStudio\flutter\bin;E:\Software\AndroidStudio\flutter\bin\cache\dart-sdk\bin;C:\Users\Pritam\AppData\Roaming\Pub\Cache\bin;E:\Software\apache-maven-3.6.1\bin;
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>set PATH=%PATH%;C:\composer\;
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>path
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Dart\dart-sdk\bin;F:\MATLABR2014a\runtime\win64;F:\MATLABR2014a\bin;F:\MATLAB\MATLAB Production Server\R2014a\runtime\win64;F:\MATLAB\MATLAB Production Server\R2014a\bin;F:\MATLAB\MATLAB Production Server\R2014a\polyspace\bin;F:\MATLABR2014a\polyspace\bin;C:\Program Files (x86)\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\AdoptOpenJDK\jdk8u192-b12\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Android\android-sdk\tools;C:\Android\android-sdk\platform-tools;C:\Android\android-sdk\tools\bin;C:\Users\Pritam\AppData\Local\Microsoft\WindowsApps;C:\Users\Pritam\AppData\Local\GitHubDesktop\bin;C:\Program Files\Heroku\bin;C:\Users\Pritam\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Pritam\AppData\Roaming\npm;E:\Software\AndroidStudio\flutter\bin;E:\Software\AndroidStudio\flutter\bin\cache\dart-sdk\bin;C:\Users\Pritam\AppData\Roaming\Pub\Cache\bin;E:\Software\apache-maven-3.6.1\bin;;C:\composer\;
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>composer -V
+'php' is not recognized as an internal or external command,
+operable program or batch file.
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>set PATH=%PATH%;E:\Software\php\;
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>composer -V
+Composer version 1.9.0 2019-08-02 20:55:32
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>php -v
+PHP 7.3.9 (cli) (built: Aug 28 2019 09:28:48) ( ZTS MSVC15 (Visual C++ 2017) x64 )
+Copyright (c) 1997-2018 The PHP Group
+Zend Engine v3.3.9, Copyright (c) 1998-2018 Zend Technologies
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>require('../vendor/autoload.php');
+'require' is not recognized as an internal or external command,
+operable program or batch file.
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>php require('../vendor/autoload.php');
+Could not open input file: require('../vendor/autoload.php');
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>composer update
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+^CTerminate batch job (Y/N)?
+^C
+E:\Code\Java\HerokuJava\PHP\php-getting-started>
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>composer require alrik11es/cowsayphp
+Using version ^1.2 for alrik11es/cowsayphp
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+^CTerminate batch job (Y/N)? y
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>composer update
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Package operations: 21 installs, 0 updates, 0 removals
+  - Installing alrik11es/cowsayphp (1.2.0): Downloading (100%)
+  - Installing symfony/routing (v4.3.4): Downloading (100%)
+  - Installing psr/log (1.1.0): Downloading (100%)
+  - Installing symfony/polyfill-php73 (v1.12.0): Downloading (100%)
+  - Installing symfony/polyfill-ctype (v1.12.0): Downloading (100%)
+  - Installing symfony/debug (v4.3.4): Downloading (100%)
+  - Installing symfony/polyfill-mbstring (v1.12.0): Downloading (100%)
+  - Installing symfony/polyfill-php72 (v1.12.0): Downloading (100%)
+  - Installing symfony/polyfill-intl-idn (v1.12.0): Downloading (100%)
+  - Installing symfony/mime (v4.3.4): Downloading (100%)
+  - Installing symfony/http-foundation (v4.3.4): Downloading (100%)
+  - Installing symfony/event-dispatcher-contracts (v1.1.5): Downloading (100%)
+  - Installing psr/container (1.0.0): Downloading (100%)
+  - Installing symfony/event-dispatcher (v4.3.4): Downloading (100%)
+  - Installing symfony/http-kernel (v4.3.4): Downloading (100%)
+  - Installing pimple/pimple (v3.2.3): Downloading (100%)
+  - Installing silex/silex (v2.3.0): Downloading (100%)
+  - Installing monolog/monolog (1.24.0): Downloading (100%)
+  - Installing twig/twig (v2.11.3): Downloading (100%)
+  - Installing symfony/twig-bridge (v3.4.31): Downloading (100%)
+  - Installing heroku/heroku-buildpack-php (v160): Downloading (100%)
+symfony/routing suggests installing symfony/config (For using the all-in-one router or any loader)
+symfony/routing suggests installing symfony/yaml (For using the YAML loader)
+symfony/routing suggests installing symfony/expression-language (For using expression matching)
+symfony/routing suggests installing doctrine/annotations (For using the annotation loader)
+symfony/polyfill-intl-idn suggests installing ext-intl (For best performance)
+symfony/event-dispatcher-contracts suggests installing psr/event-dispatcher
+symfony/event-dispatcher suggests installing symfony/dependency-injection
+symfony/http-kernel suggests installing symfony/browser-kit
+symfony/http-kernel suggests installing symfony/config
+symfony/http-kernel suggests installing symfony/console
+symfony/http-kernel suggests installing symfony/dependency-injection
+symfony/http-kernel suggests installing symfony/var-dumper
+monolog/monolog suggests installing graylog2/gelf-php (Allow sending log messages to a GrayLog2 server)
+monolog/monolog suggests installing sentry/sentry (Allow sending log messages to a Sentry server)
+monolog/monolog suggests installing doctrine/couchdb (Allow sending log messages to a CouchDB server)
+monolog/monolog suggests installing ruflin/elastica (Allow sending log messages to an Elastic Search server)
+monolog/monolog suggests installing php-amqplib/php-amqplib (Allow sending log messages to an AMQP server using php-amqplib)
+monolog/monolog suggests installing ext-amqp (Allow sending log messages to an AMQP server (1.0+ required))
+monolog/monolog suggests installing ext-mongo (Allow sending log messages to a MongoDB server)
+monolog/monolog suggests installing mongodb/mongodb (Allow sending log messages to a MongoDB server via PHP Driver)
+monolog/monolog suggests installing aws/aws-sdk-php (Allow sending log messages to AWS services like DynamoDB)
+monolog/monolog suggests installing rollbar/rollbar (Allow sending log messages to Rollbar)
+monolog/monolog suggests installing php-console/php-console (Allow sending log messages to Google Chrome)
+symfony/twig-bridge suggests installing symfony/finder
+symfony/twig-bridge suggests installing symfony/asset (For using the AssetExtension)
+symfony/twig-bridge suggests installing symfony/form (For using the FormExtension)
+symfony/twig-bridge suggests installing symfony/templating (For using the TwigEngine)
+symfony/twig-bridge suggests installing symfony/translation (For using the TranslationExtension)
+symfony/twig-bridge suggests installing symfony/yaml (For using the YamlExtension)
+symfony/twig-bridge suggests installing symfony/security (For using the SecurityExtension)
+symfony/twig-bridge suggests installing symfony/stopwatch (For using the StopwatchExtension)
+symfony/twig-bridge suggests installing symfony/var-dumper (For using the DumpExtension)
+symfony/twig-bridge suggests installing symfony/expression-language (For using the ExpressionExtension)
+symfony/twig-bridge suggests installing symfony/web-link (For using the WebLinkExtension)
+Package silex/silex is abandoned, you should avoid using it. Use symfony/flex instead.
+Writing lock file
+Generating autoload files
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>
