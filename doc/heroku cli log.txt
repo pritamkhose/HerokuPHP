@@ -485,4 +485,20 @@ E:\Code\Java\HerokuJava\PHP\php-getting-started>heroku pg:psql
 E:\Code\Java\HerokuJava\PHP\php-getting-started>heroku pg:psql help
  !    Unknown database: help. Valid options are: DATABASE_URL
 
+E:\Code\Java\HerokuJava\PHP\php-getting-started>heroku pg:info
+=== DATABASE_URL
+Plan:                  Hobby-dev
+Status:                Available
+Connections:           0/20
+PG Version:            11.5
+Created:               2019-08-29 17:54 UTC
+Data Size:             7.7 MB
+Tables:                0
+Rows:                  0/10000 (In compliance)
+Fork/Follow:           Unsupported
+Rollback:              Unsupported
+Continuous Protection: Off
+Add-on:                postgresql-metric-87430
+
+
 E:\Code\Java\HerokuJava\PHP\php-getting-started>
