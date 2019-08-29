@@ -1,0 +1,173 @@
+Microsoft Windows [Version 10.0.16299.98]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+C:\Users\Pritam>E:
+
+E:\>cd E:\Code\Java\HerokuJava\PHP
+
+E:\Code\Java\HerokuJava\PHP>heroku
+Enter your Heroku credentials.
+Email: pritamkhose@gmail.com
+Password (typing will be hidden):
+ !    HTTP Error: https://api.heroku.com/login 400 Bad Request
+ !    Invalid response from API.
+ !    HTTP 400
+ !    {pritamkhose@gmail.com Pritam@4}
+ !
+ !    Are you behind a proxy?
+ !    https://devcenter.heroku.com/articles/using-the-cli#using-an-http-proxy
+
+E:\Code\Java\HerokuJava\PHP>heroku
+Enter your Heroku credentials.
+Email: pritamkhose1@gmail.com
+Password (typing will be hidden):
+ !    HTTP Error: https://api.heroku.com/login 400 Bad Request
+ !    Invalid response from API.
+ !    HTTP 400
+ !    {pritamkhose1@gmail.com pritam@4}
+ !
+ !    Are you behind a proxy?
+ !    https://devcenter.heroku.com/articles/using-the-cli#using-an-http-proxy
+
+E:\Code\Java\HerokuJava\PHP>heroku
+Enter your Heroku credentials.
+Email: pritamkhose1@gmail.com
+Password (typing will be hidden):
+ !    HTTP Error: https://api.heroku.com/login 400 Bad Request
+ !    Invalid response from API.
+ !    HTTP 400
+ !    {pritamkhose1@gmail.com pritam@4}
+ !
+ !    Are you behind a proxy?
+ !    https://devcenter.heroku.com/articles/using-the-cli#using-an-http-proxy
+
+E:\Code\Java\HerokuJava\PHP>heroku login
+Enter your Heroku credentials:
+Email: pritamkhose1@gmail.com
+Password: ********
+Logged in as pritamkhose1@gmail.com
+
+E:\Code\Java\HerokuJava\PHP>php -v
+'php' is not recognized as an internal or external command,
+operable program or batch file.
+
+E:\Code\Java\HerokuJava\PHP>git --version
+git version 2.8.1.windows.1
+
+E:\Code\Java\HerokuJava\PHP>composer -V
+'composer' is not recognized as an internal or external command,
+operable program or batch file.
+
+E:\Code\Java\HerokuJava\PHP>git clone https://github.com/heroku/php-getting-started.git
+Cloning into 'php-getting-started'...
+remote: Enumerating objects: 189, done.
+remote: Total 189 (delta 0), reused 0 (delta 0), pack-reused 189
+Receiving objects: 100% (189/189), 49.79 KiB | 26.00 KiB/s, done.
+Resolving deltas: 100% (77/77), done.
+Checking connectivity... done.
+
+E:\Code\Java\HerokuJava\PHP>cd php-getting-started
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>heroku create
+Creating app... !
+ !    You've reached the limit of 5 apps for unverified accounts. Delete some apps or add a credit card to verify your
+ !    account.
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>heroku create
+Creating app... done, stark-plains-47033
+https://stark-plains-47033.herokuapp.com/ | https://git.heroku.com/stark-plains-47033.git
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>git push heroku master
+Counting objects: 178, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (95/95), done.
+Writing objects: 100% (178/178), 48.02 KiB | 0 bytes/s, done.
+Total 178 (delta 69), reused 178 (delta 69)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> PHP app detected
+remote: -----> Bootstrapping...
+remote: -----> Installing platform packages...
+remote:        NOTICE: No runtime required in composer.json; requirements
+remote:        from dependencies in composer.lock will be used for selection
+remote:        - php (7.3.8)
+remote:        - apache (2.4.41)
+remote:        - nginx (1.16.0)
+remote: -----> Installing dependencies...
+remote:        Composer version 1.9.0 2019-08-02 20:55:32
+remote:        Loading composer repositories with package information
+remote:        Installing dependencies from lock file
+remote:        Package operations: 12 installs, 0 updates, 0 removals
+remote:          - Installing psr/log (1.0.2): Downloading (100%)
+remote:          - Installing monolog/monolog (1.22.1): Downloading (100%)
+remote:          - Installing symfony/routing (v3.2.7): Downloading (100%)
+remote:          - Installing symfony/polyfill-mbstring (v1.3.0): Downloading (100%)
+remote:          - Installing symfony/http-foundation (v3.2.7): Downloading (100%)
+remote:          - Installing symfony/event-dispatcher (v3.2.7): Downloading (100%)
+remote:          - Installing symfony/debug (v3.2.7): Downloading (100%)
+remote:          - Installing symfony/http-kernel (v3.2.7): Downloading (100%)
+remote:          - Installing pimple/pimple (v3.0.2): Downloading (100%)
+remote:          - Installing silex/silex (v2.0.4): Downloading (100%)
+remote:          - Installing twig/twig (v2.3.0): Downloading (100%)
+remote:          - Installing symfony/twig-bridge (v3.2.7): Downloading (100%)
+remote:        Generating optimized autoload files
+remote: -----> Preparing runtime environment...
+remote: -----> Checking for additional extensions to install...
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 16.6M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://stark-plains-47033.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/stark-plains-47033.git
+ * [new branch]      master -> master
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>heroku open
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>heroku logs --tail
+2019-08-29T17:14:12.145978+00:00 app[api]: Enable Logplex by user pritamkhose1@gmail.com
+2019-08-29T17:14:11.813455+00:00 app[api]: Initial release by user pritamkhose1@gmail.com
+2019-08-29T17:14:12.145978+00:00 app[api]: Release v2 created by user pritamkhose1@gmail.com
+2019-08-29T17:14:35.000000+00:00 app[api]: Build started by user pritamkhose1@gmail.com
+2019-08-29T17:14:11.813455+00:00 app[api]: Release v1 created by user pritamkhose1@gmail.com
+2019-08-29T17:14:58.698755+00:00 app[api]: Release v3 created by user pritamkhose1@gmail.com
+2019-08-29T17:14:58.698755+00:00 app[api]: Deploy 4f2369ca by user pritamkhose1@gmail.com
+2019-08-29T17:14:58.717087+00:00 app[api]: Scaled to web@1:Free by user pritamkhose1@gmail.com
+2019-08-29T17:14:59.000000+00:00 app[api]: Build succeeded
+2019-08-29T17:15:00.535160+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2019-08-29T17:15:03.135378+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2019-08-29T17:15:03.180352+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2019-08-29T17:15:03.210417+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2019-08-29T17:15:03.216311+00:00 app[web.1]: Starting php-fpm...
+2019-08-29T17:15:05.219678+00:00 app[web.1]: Starting httpd...
+2019-08-29T17:15:05.580056+00:00 heroku[web.1]: State changed from starting to up
+2019-08-29T17:15:35.596504+00:00 heroku[router]: at=info method=GET path="/" host=stark-plains-47033.herokuapp.com request_id=31a8a142-ccf2-4920-b284-bcded64dfa6d fwd="157.33.109.117" dyno=web.1 connect=1ms service=119ms status=200 bytes=7010 protocol=https
+2019-08-29T17:15:35.521089+00:00 app[web.1]: [2019-08-29 17:15:35] app.INFO: Matched route "{route}". {"route":"GET_","route_parameters":{"_controller":"[object] (Closure: {})","_route":"GET_"},"request_uri":"http://stark-plains-47033.herokuapp.com/","method":"GET"} []
+2019-08-29T17:15:35.521367+00:00 app[web.1]: [2019-08-29 17:15:35] app.DEBUG: > GET / [] []
+2019-08-29T17:15:35.521543+00:00 app[web.1]: [2019-08-29 17:15:35] app.DEBUG: logging output. [] []
+2019-08-29T17:15:35.594876+00:00 app[web.1]: [2019-08-29 17:15:35] app.DEBUG: < 200 [] []
+2019-08-29T17:15:35.596413+00:00 app[web.1]: 10.157.108.182 - - [29/Aug/2019:17:15:35 +0000] "GET / HTTP/1.1" 200 6804 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+2019-08-29T17:15:37.658365+00:00 heroku[router]: at=info method=GET path="/stylesheets/main.css" host=stark-plains-47033.herokuapp.com request_id=59ea3aa1-aac2-4d72-83f8-e3ef65fffbc1 fwd="157.33.109.117" dyno=web.1 connect=1ms service=1ms status=200 bytes=836 protocol=https
+2019-08-29T17:15:37.658607+00:00 app[web.1]: 10.157.108.182 - - [29/Aug/2019:17:15:37 +0000] "GET /stylesheets/main.css HTTP/1.1" 200 605 "https://stark-plains-47033.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+2019-08-29T17:15:42.464101+00:00 heroku[router]: at=info method=GET path="/images/lang-logo.png" host=stark-plains-47033.herokuapp.com request_id=aae66a92-c956-4c04-8131-f24021e70143 fwd="157.33.109.117" dyno=web.1 connect=1ms service=1ms status=200 bytes=1299 protocol=https
+2019-08-29T17:15:42.464225+00:00 app[web.1]: 10.157.108.182 - - [29/Aug/2019:17:15:42 +0000] "GET /images/lang-logo.png HTTP/1.1" 200 1066 "https://stark-plains-47033.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+2019-08-29T17:15:49.562664+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=stark-plains-47033.herokuapp.com request_id=193db920-ccf2-4c75-afa5-3b7fbadf24dc fwd="157.33.109.117" dyno=web.1 connect=1ms service=10ms status=404 bytes=13259 protocol=https
+2019-08-29T17:15:49.559363+00:00 app[web.1]: [2019-08-29 17:15:49] app.ERROR: Symfony\Component\HttpKernel\Exception\NotFoundHttpException: No route found for "GET /favicon.ico" (from "https://stark-plains-47033.herokuapp.com/") (uncaught exception) at /app/vendor/symfony/http-kernel/EventListener/RouterListener.php line 125 {"exception":"[object] (Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException(code: 0): No route found for \"GET /favicon.ico\" (from \"https://stark-plains-47033.herokuapp.com/\") at /app/vendor/symfony/http-kernel/EventListener/RouterListener.php:125, Symfony\\Component\\Routing\\Exception\\ResourceNotFoundException(code: 0): No routes found for \"/favicon.ico\". at /app/vendor/symfony/routing/Matcher/UrlMatcher.php:98)"} []
+2019-08-29T17:15:49.561189+00:00 app[web.1]: [2019-08-29 17:15:49] app.DEBUG: < 404 [] []
+2019-08-29T17:15:49.562258+00:00 app[web.1]: 10.157.108.182 - - [29/Aug/2019:17:15:49 +0000] "GET /favicon.ico HTTP/1.1" 404 13038 "https://stark-plains-47033.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+2019-08-29T17:17:20.964984+00:00 app[web.1]: [2019-08-29 17:17:20] app.INFO: Matched route "{route}". {"route":"GET_","route_parameters":{"_controller":"[object] (Closure: {})","_route":"GET_"},"request_uri":"http://stark-plains-47033.herokuapp.com/","method":"GET"} []
+2019-08-29T17:17:20.965237+00:00 app[web.1]: [2019-08-29 17:17:20] app.DEBUG: > GET / [] []
+2019-08-29T17:17:20.965400+00:00 app[web.1]: [2019-08-29 17:17:20] app.DEBUG: logging output. [] []
+2019-08-29T17:17:20.965556+00:00 app[web.1]: [2019-08-29 17:17:20] app.DEBUG: < 200 [] []
+2019-08-29T17:17:20.967102+00:00 app[web.1]: 10.11.211.150 - - [29/Aug/2019:17:17:20 +0000] "GET / HTTP/1.1" 200 6804 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+2019-08-29T17:17:20.968406+00:00 heroku[router]: at=info method=GET path="/" host=stark-plains-47033.herokuapp.com request_id=6b12f325-3dbb-414e-ae7a-0bbe0a2941b9 fwd="157.33.109.117" dyno=web.1 connect=1ms service=15ms status=200 bytes=7010 protocol=https
+2019-08-29T17:17:21.360650+00:00 app[web.1]: 10.180.212.177 - - [29/Aug/2019:17:17:21 +0000] "GET /stylesheets/main.css HTTP/1.1" 304 - "https://stark-plains-47033.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+2019-08-29T17:17:21.604720+00:00 app[web.1]: 10.11.211.150 - - [29/Aug/2019:17:17:21 +0000] "GET /images/lang-logo.png HTTP/1.1" 304 - "https://stark-plains-47033.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+2019-08-29T17:17:21.359815+00:00 heroku[router]: at=info method=GET path="/stylesheets/main.css" host=stark-plains-47033.herokuapp.com request_id=e5a7e71d-864f-473e-a005-611f9cefea13 fwd="157.33.109.117" dyno=web.1 connect=1ms service=3ms status=304 bytes=128 protocol=https
+2019-08-29T17:17:21.605265+00:00 heroku[router]: at=info method=GET path="/images/lang-logo.png" host=stark-plains-47033.herokuapp.com request_id=973b8bf8-f1fc-43f6-9de1-4bd21ffb251c fwd="157.33.109.117" dyno=web.1 connect=1ms service=2ms status=304 bytes=128 protocol=https
+^C
