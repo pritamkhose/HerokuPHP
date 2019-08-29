@@ -303,4 +303,186 @@ Package silex/silex is abandoned, you should avoid using it. Use symfony/flex in
 Writing lock file
 Generating autoload files
 
+E:\Code\Java\HerokuJava\PHP\php-getting-started>git add .
+warning: LF will be replaced by CRLF in composer.lock.
+The file will have its original line endings in your working directory.
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>git add .
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>git commit -m "Demo"
+[master warning: LF will be replaced by CRLF in composer.lock.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in composer.lock.
+The file will have its original line endings in your working directory.
+864ec42] Demo
+warning: LF will be replaced by CRLF in composer.lock.
+The file will have its original line endings in your working directory.
+ 5 files changed, 1004 insertions(+), 177 deletions(-)
+ create mode 100644 doc/heroku cli log.txt
+ create mode 100644 doc/link.txt
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>git push heroku master
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 9.39 KiB | 0 bytes/s, done.
+Total 9 (delta 4), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> PHP app detected
+remote: -----> Bootstrapping...
+remote: -----> Installing platform packages...
+remote:        NOTICE: No runtime required in composer.json; requirements
+remote:        from dependencies in composer.lock will be used for selection
+remote:        - php (7.3.8)
+remote:        - apache (2.4.41)
+remote:        - nginx (1.16.0)
+remote: -----> Installing dependencies...
+remote:        Composer version 1.9.0 2019-08-02 20:55:32
+remote:        Loading composer repositories with package information
+remote:        Installing dependencies from lock file
+remote:        Package operations: 20 installs, 0 updates, 0 removals
+remote:          - Installing alrik11es/cowsayphp (1.2.0): Downloading (100%)
+remote:          - Installing psr/log (1.1.0): Downloading (100%)
+remote:          - Installing monolog/monolog (1.24.0): Downloading (100%)
+remote:          - Installing psr/container (1.0.0): Downloading (100%)
+remote:          - Installing symfony/routing (v4.3.4): Downloading (100%)
+remote:          - Installing symfony/polyfill-php73 (v1.12.0): Downloading (100%)
+remote:          - Installing symfony/polyfill-ctype (v1.12.0): Downloading (100%)
+remote:          - Installing symfony/polyfill-mbstring (v1.12.0): Downloading (100%)
+remote:          - Installing symfony/polyfill-php72 (v1.12.0): Downloading (100%)
+remote:          - Installing symfony/polyfill-intl-idn (v1.12.0): Downloading (100%)
+remote:          - Installing symfony/mime (v4.3.4): Downloading (100%)
+remote:          - Installing symfony/http-foundation (v4.3.4): Downloading (100%)
+remote:          - Installing symfony/event-dispatcher-contracts (v1.1.5): Downloading (100%)
+remote:          - Installing symfony/event-dispatcher (v4.3.4): Downloading (100%)
+remote:          - Installing symfony/debug (v4.3.4): Downloading (100%)
+remote:          - Installing symfony/http-kernel (v4.3.4): Downloading (100%)
+remote:          - Installing pimple/pimple (v3.2.3): Downloading (100%)
+remote:          - Installing silex/silex (v2.3.0): Downloading (100%)
+remote:          - Installing twig/twig (v2.11.3): Downloading (100%)
+remote:          - Installing symfony/twig-bridge (v3.4.31): Downloading (100%)
+remote:        Package silex/silex is abandoned, you should avoid using it. Use symfony/flex instead.
+remote:        Generating optimized autoload files
+remote: -----> Preparing runtime environment...
+remote: -----> Checking for additional extensions to install...
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 16.9M
+remote: -----> Launching...
+remote:        Released v4
+remote:        https://stark-plains-47033.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/stark-plains-47033.git
+   4f2369c..864ec42  master -> master
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>heroku open cowsay
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>heroku addons:create heroku-postgresql:hobby-dev
+Creating heroku-postgresql:hobby-dev on stark-plains-47033... free
+Database has been created and is available
+ ! This database is empty. If upgrading, you can transfer
+ ! data from another database with pg:copy
+Created postgresql-metric-87430 as DATABASE_URL
+Use heroku addons:docs heroku-postgresql to view documentation
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>composer require csanquer/pdo-service-provider=~1.1dev
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Package operations: 2 installs, 0 updates, 0 removals
+  - Installing symfony/options-resolver (v3.0.9): Downloading (100%)
+  - Installing csanquer/pdo-service-provider (dev-master 2b07fd8): Cloning 2b07fd86e1 from cache
+Package silex/silex is abandoned, you should avoid using it. Use symfony/flex instead.
+Writing lock file
+Generating autoload files
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>git add .
+warning: LF will be replaced by CRLF in composer.lock.
+The file will have its original line endings in your working directory.
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>git add .
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>git commit -m "added database access"
+[master warning: LF will be replaced by CRLF in composer.lock.
+The file will have its original line endings in your working directory.
+6610939] added database access
+warning: LF will be replaced by CRLF in composer.lock.
+The file will have its original line endings in your working directory.
+ 4 files changed, 154 insertions(+), 3 deletions(-)
+ create mode 100644 web/views/database.twig
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>git push heroku master
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.96 KiB | 0 bytes/s, done.
+Total 8 (delta 5), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> PHP app detected
+remote: -----> Bootstrapping...
+remote: -----> Installing platform packages...
+remote:        NOTICE: No runtime required in composer.json; requirements
+remote:        from dependencies in composer.lock will be used for selection
+remote:        - php (7.3.8)
+remote:        - apache (2.4.41)
+remote:        - nginx (1.16.0)
+remote: -----> Installing dependencies...
+remote:        Composer version 1.9.0 2019-08-02 20:55:32
+remote:        Loading composer repositories with package information
+remote:        Installing dependencies from lock file
+remote:        Package operations: 22 installs, 0 updates, 0 removals
+remote:          - Installing alrik11es/cowsayphp (1.2.0): Loading from cache
+remote:          - Installing symfony/options-resolver (v3.0.9): Downloading (100%)
+remote:          - Installing symfony/routing (v4.3.4): Loading from cache
+remote:          - Installing symfony/polyfill-php73 (v1.12.0): Loading from cache
+remote:          - Installing symfony/polyfill-ctype (v1.12.0): Loading from cache
+remote:          - Installing symfony/polyfill-mbstring (v1.12.0): Loading from cache
+remote:          - Installing symfony/polyfill-php72 (v1.12.0): Loading from cache
+remote:          - Installing symfony/polyfill-intl-idn (v1.12.0): Loading from cache
+remote:          - Installing symfony/mime (v4.3.4): Loading from cache
+remote:          - Installing symfony/http-foundation (v4.3.4): Loading from cache
+remote:          - Installing symfony/event-dispatcher-contracts (v1.1.5): Loading from cache
+remote:          - Installing symfony/event-dispatcher (v4.3.4): Loading from cache
+remote:          - Installing psr/log (1.1.0): Loading from cache
+remote:          - Installing symfony/debug (v4.3.4): Loading from cache
+remote:          - Installing symfony/http-kernel (v4.3.4): Loading from cache
+remote:          - Installing psr/container (1.0.0): Loading from cache
+remote:          - Installing pimple/pimple (v3.2.3): Loading from cache
+remote:          - Installing silex/silex (v2.3.0): Loading from cache
+remote:          - Installing csanquer/pdo-service-provider (dev-master 2b07fd8): Downloading (100%)
+remote:          - Installing monolog/monolog (1.24.0): Loading from cache
+remote:          - Installing twig/twig (v2.11.3): Loading from cache
+remote:          - Installing symfony/twig-bridge (v3.4.31): Loading from cache
+remote:        Package silex/silex is abandoned, you should avoid using it. Use symfony/flex instead.
+remote:        Generating optimized autoload files
+remote: -----> Preparing runtime environment...
+remote: -----> Checking for additional extensions to install...
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 16.9M
+remote: -----> Launching...
+remote:        Released v7
+remote:        https://stark-plains-47033.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/stark-plains-47033.git
+   864ec42..6610939  master -> master
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>heroku pg:psql
+--> Connecting to postgresql-metric-87430
+ !    The local psql command could not be located. For help installing psql, see
+ !    https://devcenter.heroku.com/articles/heroku-postgresql#local-setup
+
+E:\Code\Java\HerokuJava\PHP\php-getting-started>heroku pg:psql help
+ !    Unknown database: help. Valid options are: DATABASE_URL
+
 E:\Code\Java\HerokuJava\PHP\php-getting-started>
